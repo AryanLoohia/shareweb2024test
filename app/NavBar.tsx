@@ -33,7 +33,7 @@ const Nav = () => {
       <nav className="container mx-auto flex justify-between items-center px-4 py-5">
         {/* Logo Section */}
         <div>
-          <Link href="/home">
+          <Link href="/">
             <img
               src="/logo2.png" // Update with your logo's path
               alt="Logo"
