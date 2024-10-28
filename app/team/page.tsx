@@ -1,10 +1,11 @@
 import React from "react";
-import LampDemo from "./lampimport";
-
+import { BackgroundBoxesDemo } from "./Background";
 const page = () => {
   return (
     <div className="mt-20">
-      <LampDemo></LampDemo>
+      <div className="min-h-96">
+        <BackgroundBoxesDemo></BackgroundBoxesDemo>
+      </div>
     </div>
   );
 };
