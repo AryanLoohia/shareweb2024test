@@ -3,10 +3,11 @@ import React from "react";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Companies from "./companies";
 import { TypewriterEffectSmoothDemo } from "./typewriter";
+import StickyScrollRevealDemo from "./about";
 
 export default function SparklesPreview() {
   return (
-    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center mt-60 overflow-hidden ">
+    <div className="h-auto w-full bg-black flex flex-col items-center justify-center mt-60 overflow-hidden ">
       <h1 className="mb-4 leading-normal text-4xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
         Strategic Hub for{" "}
         <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
@@ -43,6 +44,7 @@ export default function SparklesPreview() {
       </div>
 
       <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo>
+      <StickyScrollRevealDemo></StickyScrollRevealDemo>
     </div>
   );
 }
