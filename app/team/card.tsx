@@ -1,19 +1,38 @@
 import React from "react";
 
-const Card = () => {
+interface CardProps {
+  name: string;
+  portfolio?: string;
+  pic: string;
+  linkedin?: string;
+  facebook?: string;
+  instagram?: string;
+}
+
+const Card: React.FC<CardProps> = ({
+  name,
+  portfolio,
+  pic,
+  linkedin,
+  facebook,
+  instagram,
+}) => {
   return (
     <div>
-      <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-50 dark:text-gray-800">
+      <div className="flex flex-col justify-center max-w-xs p-6 mx-2 shadow-md rounded-xl sm:px-12 dark:bg-zinc-900 dark:text-gray-800 border border-emerald-500 shadow-[5px_5px_0px_0px_rgba(31,78,47)] rounded-lg">
         <img
-          src="https://source.unsplash.com/150x150/?portrait?3"
+          src={pic}
           alt=""
-          className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"
+          className="w-32 h-32 mx-auto rounded-full  aspect-square"
         />
         <div className="space-y-4 text-center divide-y dark:divide-gray-300">
           <div className="my-2 space-y-1">
-            <h2 className="text-xl font-semibold sm:text-2xl">Leroy Jenkins</h2>
-            <p className="px-5 text-xs sm:text-base dark:text-gray-600">
-              Full-stack developer
+            <h2 className="text-xl font-semibold text-gray-300 sm:text-2xl">
+              {" "}
+              {name}{" "}
+            </h2>
+            <p className="px-5 text-xs sm:text-base dark:text-gray-500">
+              {portfolio}
             </p>
           </div>
           <div className="flex justify-center pt-2 space-x-4 align-center">
@@ -21,7 +40,7 @@ const Card = () => {
               rel="noopener noreferrer"
               href="#"
               aria-label="GitHub"
-              className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-emerald-600"
             >
               <svg
                 viewBox="0 0 496 512"
@@ -35,7 +54,7 @@ const Card = () => {
               rel="noopener noreferrer"
               href="#"
               aria-label="Dribble"
-              className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600"
+              className="p-2 rounded-md  dark:text-gray-100 hover:dark:text-emerald-600"
             >
               <svg
                 viewBox="0 0 512 512"
@@ -49,7 +68,7 @@ const Card = () => {
               rel="noopener noreferrer"
               href="#"
               aria-label="Twitter"
-              className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600"
+              className="p-2 rounded-md  dark:text-gray-100 hover:dark:text-emerald-600"
             >
               <svg
                 viewBox="0 0 512 512"
@@ -63,7 +82,7 @@ const Card = () => {
               rel="noopener noreferrer"
               href="#"
               aria-label="Email"
-              className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-emerald-600"
             >
               <svg
                 viewBox="0 0 512 512"

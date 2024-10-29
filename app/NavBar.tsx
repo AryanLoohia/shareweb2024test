@@ -29,7 +29,7 @@ const Nav = () => {
   ];
 
   return (
-    <header className="bg-zinc-900 shadow-sm backdrop-blur-2xl fixed top-0 left-0 w-full z-10">
+    <header className="bg-zinc-900 shadow-sm backdrop-blur-2xl fixed top-0 left-0 w-full z-30">
       <nav className="container mx-auto flex justify-between items-center px-4 py-5">
         {/* Logo Section */}
         <div>
