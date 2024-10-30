@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import { StickyScroll } from "@/app/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 
 const content = [
@@ -10,7 +10,7 @@ const content = [
       "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+        <img src="./logo2.png" />
       </div>
     ),
   },

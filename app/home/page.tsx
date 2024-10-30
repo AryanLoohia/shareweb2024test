@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
-import { SparklesCore } from "@/components/ui/sparkles";
+import { SparklesCore } from "@/app/components/ui/sparkles";
 import Companies from "./companies";
 import { TypewriterEffectSmoothDemo } from "./typewriter";
 import StickyScrollRevealDemo from "./about";
+import LayoutGridDemo from "./events";
 
 export default function SparklesPreview() {
   return (
     <div className="h-auto w-full bg-black flex flex-col items-center justify-center mt-60 overflow-hidden ">
-      <h1 className="mb-4 leading-normal text-4xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      <h1 className="mb-4 leading-normal text-4xl text-center font-extrabold  tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
         Strategic Hub for{" "}
         <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
           Analysis
@@ -45,6 +46,7 @@ export default function SparklesPreview() {
 
       <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo>
       <StickyScrollRevealDemo></StickyScrollRevealDemo>
+      <LayoutGridDemo></LayoutGridDemo>
     </div>
   );
 }
