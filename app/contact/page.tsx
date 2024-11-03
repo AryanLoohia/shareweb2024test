@@ -5,15 +5,6 @@ import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 const page = () => {
-  const [state, handleSubmit] = useForm("xyzyezon");
-  const [email, setEmail] = useState("");
-  const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
-  const [phone, setPhone] = useState("");
-  const [usermessage, setUsermessage] = useState("");
-
-  const [message, setMessage] = useState("");
-
   return (
     <div className="mt-20">
       <section className="bg-white dark:bg-zinc-900">
