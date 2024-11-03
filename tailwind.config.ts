@@ -76,6 +76,9 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        border: {
+          to: { "--border-angle": "360deg" },
+        },
         slidein: {
           from: {
             opacity: "0",
@@ -95,6 +98,7 @@ const config = {
         slidein300: "slidein 1s ease 300ms forwards",
         slidein500: "slidein 1s ease 500ms forwards",
         slidein700: "slidein 1s ease 700ms forwards",
+        border: "border 4s linear infinite",
       },
     },
   },

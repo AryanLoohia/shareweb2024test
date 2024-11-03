@@ -11,10 +11,10 @@ export default function LayoutGridDemo() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect(); // Disconnect to trigger only once
+          observer.disconnect();
         }
       },
-      { threshold: 0.3 } // Adjust threshold as needed
+      { threshold: 0.3 }
     );
 
     if (elementRef.current) {
@@ -32,11 +32,11 @@ export default function LayoutGridDemo() {
     >
       <div
         ref={elementRef}
-        className={`h-screen py-20 w-screen ${
+        className={`h-auto py-20 mx-10 w-screen ${
           visible ? "animate-slidein opacity-100" : "opacity-0"
         } [--slidein-delay:30ms]`}
       >
-        <h1 className="relative w-screen text-center z-20 mb-10 bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-green-500 text-5xl font-black animate-slidein opacity-0 [--slidein-delay:30ms]">
+        <h1 className="relative w-screen text-center z-20 mb-10 bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-green-800 text-5xl font-black animate-slidein opacity-0 [--slidein-delay:30ms]">
           Our Events
         </h1>
         <LayoutGrid cards={cards} />
@@ -48,9 +48,7 @@ export default function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        House in the woods
-      </p>
+      <p className="font-bold md:text-4xl text-xl text-white">Bid2Pitch</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A serene and tranquil retreat, this house in the woods offers a peaceful
@@ -64,7 +62,7 @@ const SkeletonTwo = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        House above the clouds
+        Case Study Intras
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -79,7 +77,7 @@ const SkeletonThree = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Greens all over
+        Navigating your Path to ISB
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -93,7 +91,7 @@ const SkeletonFour = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
+        Equity Reasearch
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -108,29 +106,25 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    className: "md:col-span-2 sm:rows-span-4",
+    thumbnail: "/events/B2P.JPG",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: "/events/CSI.png",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: "events/ISB.JPG",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: "events/ERR.png",
   },
 ];

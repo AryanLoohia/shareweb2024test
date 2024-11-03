@@ -1,6 +1,19 @@
+"use client";
 import React from "react";
+import { FormEvent } from "react";
+import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const page = () => {
+  const [state, handleSubmit] = useForm("xyzyezon");
+  const [email, setEmail] = useState("");
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [phone, setPhone] = useState("");
+  const [usermessage, setUsermessage] = useState("");
+
+  const [message, setMessage] = useState("");
+
   return (
     <div className="mt-20">
       <section className="bg-white dark:bg-zinc-900">
@@ -117,19 +130,10 @@ const page = () => {
                 </div>
 
                 <div className="col-span-6">
-                  <label htmlFor="MarketingAccept" className="flex gap-4">
-                    <input
-                      type="checkbox"
-                      id="MarketingAccept"
-                      name="marketing_accept"
-                      className="size-5 rounded-md border-zinc-200 bg-white shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:focus:ring-offset-zinc-900"
-                    />
-
-                    <span className="text-sm text-zinc-700 dark:text-zinc-200">
-                      I want to receive emails about events, product updates and
-                      company announcements.
-                    </span>
-                  </label>
+                  <label
+                    htmlFor="MarketingAccept"
+                    className="flex gap-4"
+                  ></label>
                 </div>
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">

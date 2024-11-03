@@ -2,31 +2,23 @@
 
 import React, { FormEvent } from "react";
 import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+
 const Footer = () => {
+  const [state, handleSubmit] = useForm("xyzyezon");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.ok) {
-        setMessage("Subscription successful");
-      } else {
-        setMessage("Failed to subscribe");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setMessage("An error occurred. Please try again.");
+  React.useEffect(() => {
+    if (state.succeeded) {
+      setEmail("");
+      setMessage("Delighted to have you onboard");
+      const messageTimeout = setTimeout(() => {
+        setMessage("");
+      }, 2000);
+      return () => clearTimeout(messageTimeout);
     }
-  };
+  }, [state.succeeded]);
+
   return (
     <div>
       <footer className="bg-white dark:bg-zinc-900 pb-10">
@@ -36,32 +28,45 @@ const Footer = () => {
               Sign Up for the SHARE newsletter
             </strong>
 
-            <form className="mt-6" onSubmit={handleSubmit}>
+            <form
+              action="https://formspree.io/f/xyzyezon"
+              className="mt-6"
+              onSubmit={handleSubmit}
+            >
               <div className="relative max-w-lg">
-                <label className="sr-only" htmlFor="email">
-                  {" "}
-                  Email{" "}
+                <label htmlFor="email" className="sr-only">
+                  Email Address
                 </label>
-
                 <input
-                  className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium dark:border-gray-700 dark:bg-gray-800 dark:text-white"
                   id="email"
                   type="email"
-                  placeholder="john@doe.com"
+                  name="email"
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  required
+                  className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
 
                 <button
                   type="submit"
+                  disabled={state.submitting}
                   className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-emerald-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-emerald-700"
                 >
-                  Subscribe
+                  Submit
                 </button>
               </div>
-              {message && (
-                <p className="mt-4 text-center text-gray-700">{message}</p>
-              )}
+              <div
+                aria-live="polite"
+                className="text-center mt-4 text-emeraldn -600"
+              >
+                {message && (
+                  <p className="text-center text-emerald-500 mt-4">{message}</p>
+                )}
+              </div>
             </form>
           </div>
 

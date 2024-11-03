@@ -5,11 +5,13 @@ import Companies from "./companies";
 import { TypewriterEffectSmoothDemo } from "./typewriter";
 import StickyScrollRevealDemo from "./about";
 import LayoutGridDemo from "./events";
+import Clients from "./clients";
+import { motion } from "framer-motion";
 
 export default function SparklesPreview() {
   return (
     <div className="h-auto w-full bg-black flex flex-col items-center justify-center mt-60 overflow-hidden ">
-      <h1 className="mb-4 leading-normal text-4xl text-center font-extrabold  tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      <h1 className="mb-4 leading-normal text-center font-extrabold  tracking-tight text-gray-900 sm:text-3xl md:text-5xl lg:text-6xl dark:text-white">
         Strategic Hub for{" "}
         <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
           Analysis
@@ -45,8 +47,15 @@ export default function SparklesPreview() {
       </div>
 
       <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo>
-      <StickyScrollRevealDemo></StickyScrollRevealDemo>
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1 }}
+      >
+        <StickyScrollRevealDemo></StickyScrollRevealDemo>
+      </motion.div>
       <LayoutGridDemo></LayoutGridDemo>
+      <Clients></Clients>
     </div>
   );
 }
