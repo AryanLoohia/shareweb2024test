@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Companies = () => {
@@ -15,52 +16,52 @@ const Companies = () => {
         >
           <ul
             x-ref="logos"
-            className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+            className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_Image]:max-w-none animate-infinite-scroll"
           >
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="/companylogos/amazon.png"
                 alt="Amazon"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="/companylogos/sunpharma.png"
                 alt="Sunpharma"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="/companylogos/cultureos.png"
                 alt="CultureOS"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/vivaldis.png"
                 alt="Vivaldis"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/amazon.png"
                 alt="Amazon"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/cinestox.png"
                 alt="Cinestox"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/isb.png"
                 alt="ISB"
@@ -69,52 +70,52 @@ const Companies = () => {
           </ul>
           <ul
             x-ref="logos"
-            className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+            className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_Image]:max-w-none animate-infinite-scroll"
           >
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="/companylogos/amazon.png"
                 alt="Amazon"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="/companylogos/sunpharma.png"
                 alt="Sunpharma"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="/companylogos/cultureos.png"
                 alt="CultureOS"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/vivaldis.png"
                 alt="Vivaldis"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/amazon.png"
                 alt="Amazon"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/cinestox.png"
                 alt="Cinestox"
               />
             </li>
             <li>
-              <img
+              <Image
                 className="h-40 w-40 object-contain filter brightness-0 invert"
                 src="./companylogos/isb.png"
                 alt="ISB"

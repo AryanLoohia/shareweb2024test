@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FormEvent } from "react";
+import React from "react";
 import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 

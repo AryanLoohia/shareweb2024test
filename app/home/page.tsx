@@ -7,7 +7,6 @@ import StickyScrollRevealDemo from "./about";
 import LayoutGridDemo from "./events";
 import Clients from "./clients";
 import { motion } from "framer-motion";
-import Number from "./numbers";
 import Numbers from "./numbers";
 export default function SparklesPreview() {
   return (

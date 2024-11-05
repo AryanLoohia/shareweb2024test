@@ -40,8 +40,7 @@ const Clients = () => {
           >
             <div className="flex justify-center md:justify-end -mt-16">
               <img
-                className="w-20 h-20 object-cover   
- rounded-full border-4 border-emerald-600"
+                className="w-20 h-20 object-cover rounded-full border-4 border-emerald-600"
                 src={testimonial.logo || defaultLogo}
                 alt={`Client Logo - ${testimonial.companyName}`}
               />
