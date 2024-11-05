@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div>
-      <div className="flex h-[35vh] flex-col justify-center max-w-xs p-6 mx-2 shadow-md rounded-xl sm:px-12 dark:bg-zinc-900 dark:text-gray-800 border border-emerald-500 shadow-[5px_5px_0px_0px_rgba(31,78,47)] rounded-lg">
+      <div className="flex flex-col justify-center max-w-xs p-6 mx-2 shadow-md rounded-xl sm:px-12 dark:bg-zinc-900 dark:text-gray-800 border border-emerald-500 shadow-[5px_5px_0px_0px_rgba(31,78,47)] rounded-lg">
         <img
           src={pic}
           alt=""
