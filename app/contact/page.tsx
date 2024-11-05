@@ -3,6 +3,7 @@ import React from "react";
 import { FormEvent } from "react";
 import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
@@ -17,14 +18,20 @@ const page = () => {
             />
 
             <div className="hidden lg:relative lg:block lg:p-12">
-              <h1 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-                Get in Touch
-              </h1>
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                <h1 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+                  Get in Touch
+                </h1>
 
-              <p className="mt-4 leading-relaxed text-white/90">
-                Discover what our student analysts and consultants offer and
-                join an exciting project today
-              </p>
+                <p className="mt-4 leading-relaxed text-white/90">
+                  Discover what our student analysts and consultants offer and
+                  join an exciting project today
+                </p>
+              </motion.div>
             </div>
           </section>
 
@@ -40,99 +47,104 @@ const page = () => {
                   join an exciting project today
                 </p>
               </div>
+              <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+              >
+                <form action="#" className="mt-8 grid grid-cols-6 gap-6">
+                  <div className="col-span-6 sm:col-span-3">
+                    <label
+                      htmlFor="FirstName"
+                      className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
+                    >
+                      First Name
+                    </label>
 
-              <form action="#" className="mt-8 grid grid-cols-6 gap-6">
-                <div className="col-span-6 sm:col-span-3">
-                  <label
-                    htmlFor="FirstName"
-                    className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
-                  >
-                    First Name
-                  </label>
+                    <input
+                      type="text"
+                      id="FirstName"
+                      name="first_name"
+                      className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 focus:border-emerald-500"
+                    />
+                  </div>
 
-                  <input
-                    type="text"
-                    id="FirstName"
-                    name="first_name"
-                    className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 focus:border-emerald-500"
-                  />
-                </div>
+                  <div className="col-span-6 sm:col-span-3">
+                    <label
+                      htmlFor="LastName"
+                      className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
+                    >
+                      Last Name
+                    </label>
 
-                <div className="col-span-6 sm:col-span-3">
-                  <label
-                    htmlFor="LastName"
-                    className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
-                  >
-                    Last Name
-                  </label>
+                    <input
+                      type="text"
+                      id="LastName"
+                      name="last_name"
+                      className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                    />
+                  </div>
 
-                  <input
-                    type="text"
-                    id="LastName"
-                    name="last_name"
-                    className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
-                  />
-                </div>
+                  <div className="col-span-6">
+                    <label
+                      htmlFor="Email"
+                      className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
+                    >
+                      Email
+                    </label>
 
-                <div className="col-span-6">
-                  <label
-                    htmlFor="Email"
-                    className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
-                  >
-                    Email
-                  </label>
+                    <input
+                      type="email"
+                      id="Email"
+                      name="email"
+                      className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                    />
+                  </div>
+                  <div className="col-span-6">
+                    <label
+                      htmlFor="Email"
+                      className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
+                    >
+                      Phone No.
+                    </label>
 
-                  <input
-                    type="email"
-                    id="Email"
-                    name="email"
-                    className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
-                  />
-                </div>
-                <div className="col-span-6">
-                  <label
-                    htmlFor="Email"
-                    className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
-                  >
-                    Phone No.
-                  </label>
+                    <input
+                      type="email"
+                      id="Email"
+                      name="email"
+                      className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                    />
+                  </div>
+                  <div className="col-span-6">
+                    <label
+                      htmlFor="Message"
+                      className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
+                    >
+                      Message
+                    </label>
 
-                  <input
-                    type="email"
-                    id="Email"
-                    name="email"
-                    className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
-                  />
-                </div>
-                <div className="col-span-6">
-                  <label
-                    htmlFor="Message"
-                    className="block text-sm font-medium text-zinc-700 dark:text-zinc-200"
-                  >
-                    Message
-                  </label>
+                    <textarea
+                      id="Message"
+                      name="message"
+                      rows={4} // Controls height based on line count
+                      className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 resize-none" // `resize-none` prevents resizing if undesired
+                    />
+                  </div>
 
-                  <textarea
-                    id="Message"
-                    name="message"
-                    rows={4} // Controls height based on line count
-                    className="mt-1 w-full rounded-md border-zinc-200 bg-white text-sm text-zinc-700 shadow-sm dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 resize-none" // `resize-none` prevents resizing if undesired
-                  />
-                </div>
+                  <div className="col-span-6">
+                    <label
+                      htmlFor="MarketingAccept"
+                      className="flex gap-4"
+                    ></label>
+                  </div>
 
-                <div className="col-span-6">
-                  <label
-                    htmlFor="MarketingAccept"
-                    className="flex gap-4"
-                  ></label>
-                </div>
-
-                <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  <button className="inline-block shrink-0 rounded-md border border-emerald-600 bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-emerald-600 focus:outline-none focus:ring active:text-emerald-500 dark:hover:bg-emerald-700 dark:hover:text-white">
-                    Submit
-                  </button>
-                </div>
-              </form>
+                  <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
+                    <button className="inline-block shrink-0 rounded-md border border-emerald-600 bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-emerald-600 focus:outline-none focus:ring active:text-emerald-500 dark:hover:bg-emerald-700 dark:hover:text-white">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </motion.div>
             </div>
           </main>
         </div>

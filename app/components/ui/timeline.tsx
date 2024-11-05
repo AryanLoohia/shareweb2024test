@@ -39,9 +39,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          How a Project Timeline with us look like :
+          <mark className="text-2xl px-2 sm:text-8xl font-bold text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
+            Project Timeline
+          </mark>{" "}
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <p className="text-neutral-700 dark:text-neutral-300 py-2 text-xl md:text-2xl max-w-l">
           From a smooth onboarding, in depth analysis of the Problem Statement
           all the way to the final deliverables , we got your back.
         </p>

@@ -10,49 +10,49 @@ export function BackgroundBoxesDemo() {
       name: "Garvit Garg",
       portfolio: "Projects and Partnerships",
       pic: "/presidents/garvit.jpeg",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/garvitgarg8903/",
       facebook: "",
-      instagram: "",
+      email: "garvit.garg.shareiitkgp@gmail.com",
     },
     {
-      name: "Garvit Garg",
+      name: "Akshat Lathi",
       portfolio: "Projects and Partnerships",
-      pic: "/presidents/garvit.jpeg",
-      linkedin: "",
+      pic: "/presidents/akshat.jpeg",
+      linkedin: "https://www.linkedin.com/in/akshat-lathi/",
       facebook: "",
-      instagram: "",
+      email: "akshat.lathi.shareiitkgp@gmail.com",
     },
     {
-      name: "Garvit Garg",
-      portfolio: "Projects and Partnerships",
-      pic: "/presidents/garvit.jpeg",
-      linkedin: "",
+      name: "Kunal Patil",
+      portfolio: "Internal Affairs and Administration",
+      pic: "/presidents/kunal.jpeg",
+      linkedin: "https://www.linkedin.com/in/kunal-patil-628045268/",
       facebook: "",
-      instagram: "",
+      email: "kunal.patil.shareiitkgp@gmail.com",
     },
     {
-      name: "Garvit Garg",
-      portfolio: "Projects and Partnerships",
-      pic: "/presidents/garvit.jpeg",
-      linkedin: "",
+      name: "Sumanth Javvaji",
+      portfolio: "Internal Affairs and Administration",
+      pic: "/presidents/sumanth.jpeg",
+      linkedin: "https://www.linkedin.com/in/sumanth-javvaji-ab6046258/",
       facebook: "",
-      instagram: "",
+      email: "sumanth.javvaji.shareiitkgp@gmail.com",
     },
     {
-      name: "Garvit Garg",
-      portfolio: "Projects and Partnerships",
-      pic: "/presidents/garvit.jpeg",
-      linkedin: "",
+      name: "Gaurav Sharma",
+      portfolio: "Marketing and Outreach",
+      pic: "/presidents/gaurav.jpeg",
+      linkedin: "https://www.linkedin.com/in/gaurav-sharma-b07974256/",
       facebook: "",
-      instagram: "",
+      email: "gaurav.sharma.shareiitkgp@gmail.com",
     },
     {
-      name: "Garvit Garg",
-      portfolio: "Projects and Partnerships",
-      pic: "/presidents/garvit.jpeg",
-      linkedin: "",
+      name: "Saurabh Chavan",
+      portfolio: "Marketing and Outreach",
+      pic: "/presidents/saurabh.jpeg",
+      linkedin: "https://www.linkedin.com/in/saurabh-chavan-961819251/",
       facebook: "",
-      instagram: "",
+      email: "saurabh.chavan.shareiitkgp@gmail.com",
     },
   ];
   return (
@@ -72,7 +72,7 @@ export function BackgroundBoxesDemo() {
             pic={president.pic}
             linkedin={president.linkedin}
             facebook={president.facebook}
-            instagram={president.instagram}
+            email={president.email}
           />
         ))}
       </div>

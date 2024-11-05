@@ -51,8 +51,11 @@ const SkeletonOne = () => {
       <p className="font-bold md:text-4xl text-xl text-white">Bid2Pitch</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+        In Bid2Pitch, teams create business proposals and bid on each other’s
+        work; higher bids give teams more time to refine their purchased
+        proposal. Teams then present their enhanced plans in the Business Plan
+        Presentation, where senior judges evaluate based on feasibility,
+        innovation, and impact.
       </p>
     </div>
   );
@@ -66,9 +69,11 @@ const SkeletonTwo = () => {
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+        In the Case Study Competition, our associate batch is divided into
+        teams, each given a problem statement to tackle. Teams prepare a
+        detailed PowerPoint presentation and present their solutions to a panel
+        of senior judges, who assess them based on content quality and
+        presentation skills.
       </p>
     </div>
   );
@@ -81,8 +86,9 @@ const SkeletonThree = () => {
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        An exclusive event in partnership with the Indian School of Business ,
+        bringing to you the crux of MBA admissions at ISB and why should you go
+        for it.
       </p>
     </div>
   );
@@ -95,8 +101,12 @@ const SkeletonFour = () => {
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        Teams are assigned a sector to conduct in-depth research and analyze
+        companies within it. They prepare an equity research report with
+        recommendations to buy, sell, or hold specific stocks, based on
+        financial performance, market trends, and risk analysis. Each team
+        presents its findings and recommendations to senior judges for
+        evaluation.
       </p>
     </div>
   );

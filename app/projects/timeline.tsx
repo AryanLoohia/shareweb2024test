@@ -1,15 +1,20 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/app/components/ui/timeline";
-
+import { motion } from "framer-motion";
 export default function TimelineDemo() {
   const data = [
     {
-      title: "Onboarding and PS Discussion",
+      title: "Project Initiation & Planning",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-2xl font-normal mb-8">
+            We start with a formal introduction, reaching out to clients and
+            organizing an initial meeting to understand their needs and
+            challenges in detail. From these insights, we draft a proposal
+            outlining our tailored approach, project scope, and deliverables,
+            setting a clear roadmap for the project.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -45,17 +50,18 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "Worflow and Internal Scrutiny",
+      title: "Worflow and Quality Assurance",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-2xl font-normal mb-8">
+            In this stage, our team dives into the project work, developing
+            solutions aligned with the client’s goals. We conduct thorough
+            internal reviews to maintain high-quality standards and consistency.
+            Advisors then verify the project’s alignment with expectations,
+            ensuring it meets all client and industry standards. integrate lorem
+            ipsum.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -90,29 +96,17 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "Deliverables and Packup",
+      title: "Delivery & Closure",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+          <p className="text-neutral-800 dark:text-neutral-200 text-xl md:text-2xl font-normal mb-4">
+            With development complete, we deliver the final solution to the
+            client, ensuring all requirements are met. After gathering feedback
+            and confirming client satisfaction, we officially close the project,
+            finalizing all documentation and concluding with a seamless
+            transition.
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -149,7 +143,13 @@ export default function TimelineDemo() {
   ];
   return (
     <div className="w-full">
-      <Timeline data={data} />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+      >
+        <Timeline data={data} />
+      </motion.div>
     </div>
   );
 }
