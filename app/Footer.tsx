@@ -31,6 +31,7 @@ const Footer = () => {
             <form
               action="https://formspree.io/f/xyzyezon"
               className="mt-6"
+              method="POST"
               onSubmit={handleSubmit}
             >
               <div className="relative max-w-lg">

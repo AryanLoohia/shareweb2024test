@@ -9,7 +9,7 @@ const content = [
     description:
       "SHARE is an innovative student-led organization that bridges the gap between academia and professional consulting. We empower talented university students to become socially responsible, results-driven leaders, equipping them with practical skills to positively impact both corporate stakeholders and society at large.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--green-900),var(--zinc-700))] flex items-center justify-center text-white">
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--green-700),var(--emerald-900))] flex items-center justify-center text-white">
         <img src="./logo2.png" />
       </div>
     ),
@@ -21,7 +21,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/linear.webp"
+          src="/events/CSI.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -37,14 +37,20 @@ const content = [
       "We offer variety of services including strategies for market entry, geographic expansion, and unlocking market potential ; analyzing market trends and customer insights to set prices that align with product value propositions ; building business plans, identifying investors, and preparing compelling pitch presentations, as well as data analytics , insight generation and recommendation plans ",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--emerald-800),var(--green-500))] flex items-center justify-center text-white">
-        Running out of content
+        <Image
+          src="/events/ERR.png"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
 ];
 export default function StickyScrollRevealDemo() {
   return (
-    <div className="p-10 w-screen">
+    <div className="p-10  relative left-10 w-screen">
       <StickyScroll content={content} />
     </div>
   );

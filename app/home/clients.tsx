@@ -5,7 +5,7 @@ const testimonials = [
     founderName: "Nilanjan Maiti",
     companyName: "Culture OS",
     speech:
-      "SHARE was responsible for a range of tasks, including data processing, industry research across 12 industries, and drafting the format for comprehensive industry reports on organizational culture within each sector. These report formats showcased the ability to synthesize different data sets and collate them to form an industry insight. SHARE actively participated in the marketing campaigns executed for the company's outreach. A keen understanding of marketing strategies, creativity in campaign design, and the ability to execute plans efficiently were displayed.",
+      "SHARE was responsible for a range of tasks, including data processing, industry research across 12 industries, and drafting the format for  industry reports on organizational culture within each sector. SHARE actively participated in the marketing campaigns executed for the company's outreach.",
     logo: "/companycolorlogos/cultureoscolor.png",
   },
   {
