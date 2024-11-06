@@ -48,7 +48,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "daisyui": "^4.12.13",
-    "eslint": "^8",
+    "eslint": "^8.57.1",
     "eslint-config-next": "15.0.0",
     "postcss": "^8.4.47",
     "tailwind-merge": "^2.5.4",

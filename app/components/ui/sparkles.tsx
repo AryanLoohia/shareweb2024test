@@ -1,13 +1,14 @@
 "use client";
-import React, { useId, useMemo } from "react";
-import { useEffect, useState } from "react";
+
+import React, { useEffect, useState, useId } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, SingleOrMultiple } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { cn } from "@/lib/utils";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, MotionProps } from "framer-motion";
 
-type ParticlesProps = {
+// Define custom props excluding conflicting ones
+interface CustomParticlesProps {
   id?: string;
   className?: string;
   background?: string;
@@ -17,31 +18,45 @@ type ParticlesProps = {
   speed?: number;
   particleColor?: string;
   particleDensity?: number;
-};
-export const SparklesCore = (props: ParticlesProps) => {
-  const {
-    id,
-    className,
-    background,
-    minSize,
-    maxSize,
-    speed,
-    particleColor,
-    particleDensity,
-  } = props;
-  const [init, setInit] = useState(false);
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
+  children?: React.ReactNode;
+}
+
+// Combine custom props with MotionProps
+type SparklesCoreProps = CustomParticlesProps & MotionProps;
+
+export const SparklesCore: React.FC<SparklesCoreProps> = ({
+  id,
+  className,
+  background = "#0d47a1",
+  minSize = 1,
+  maxSize = 3,
+  speed = 4,
+  particleColor = "#15bc75",
+  particleDensity = 120,
+  ...motionProps
+}) => {
+  const [isInitialized, setIsInitialized] = useState(false);
   const controls = useAnimation();
+  const generatedId = useId();
+
+  useEffect(() => {
+    const initializeParticles = async () => {
+      try {
+        await initParticlesEngine(async (engine) => {
+          await loadSlim(engine);
+        });
+        setIsInitialized(true);
+      } catch (error) {
+        console.error("Failed to initialize particles engine:", error);
+      }
+    };
+
+    initializeParticles();
+  }, []);
 
   const particlesLoaded = async (container?: Container) => {
     if (container) {
-      controls.start({
+      await controls.start({
         opacity: 1,
         transition: {
           duration: 1,
@@ -50,10 +65,13 @@ export const SparklesCore = (props: ParticlesProps) => {
     }
   };
 
-  const generatedId = useId();
   return (
-    <motion.div animate={controls} className={cn("opacity-0", className)}>
-      {init && (
+    <motion.div
+      animate={controls}
+      className={cn("opacity-0", className)}
+      {...motionProps} // Spread MotionProps separately
+    >
+      {isInitialized && (
         <Particles
           id={id || generatedId}
           className={cn("h-full w-full")}
@@ -61,14 +79,13 @@ export const SparklesCore = (props: ParticlesProps) => {
           options={{
             background: {
               color: {
-                value: background || "#0d47a1",
+                value: background,
               },
             },
             fullScreen: {
               enable: false,
               zIndex: 1,
             },
-
             fpsLimit: 120,
             interactivity: {
               events: {
@@ -80,7 +97,9 @@ export const SparklesCore = (props: ParticlesProps) => {
                   enable: false,
                   mode: "repulse",
                 },
-                resize: true as any,
+                resize: {
+                  enable: true, // Correctly typed
+                },
               },
               modes: {
                 push: {
@@ -122,7 +141,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
               },
               color: {
-                value: particleColor || "#15bc75",
+                value: particleColor,
                 animation: {
                   h: {
                     count: 0,
@@ -230,7 +249,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   mode: "delete",
                   value: 0,
                 },
-                value: particleDensity || 120,
+                value: particleDensity,
               },
               opacity: {
                 value: {
@@ -240,7 +259,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 animation: {
                   count: 0,
                   enable: true,
-                  speed: speed || 4,
+                  speed: speed,
                   decay: 0,
                   delay: 0,
                   sync: false,
@@ -269,8 +288,8 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               size: {
                 value: {
-                  min: minSize || 1,
-                  max: maxSize || 3,
+                  min: minSize,
+                  max: maxSize,
                 },
                 animation: {
                   count: 0,
