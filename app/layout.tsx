@@ -12,7 +12,7 @@ export default function RootLayout({
       <body>
         <Nav></Nav>
         <main>
-          <div className="mt-20">{children}</div>
+          <div className="mt-20 overflow-auto custom-scrollbar">{children}</div>
         </main>
         <Footer></Footer>
       </body>

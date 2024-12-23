@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Boxes } from "@/app/components/ui/background-boxes";
-import { cn } from "@/lib/utils";
 import Card from "./card";
 
 export function BackgroundBoxesDemo() {
@@ -56,7 +55,7 @@ export function BackgroundBoxesDemo() {
     },
   ];
   return (
-    <div className="h-auto relative min-h-screen w-full overflow-hidden bg-zinc-900 flex flex-col items-center justify-center rounded-lg">
+    <div className="h-auto relative min-h-screen w-full overflow-hidden bg-zinc-900 flex flex-col items-center justify-center rounded-lg pt-20">
       <div className="absolute inset-0 w-full h-full bg-zinc-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
       <Boxes />

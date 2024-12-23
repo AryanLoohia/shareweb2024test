@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const page = () => {
   return (
-    <div className="mt-20">
-      <section className="bg-white dark:bg-zinc-900">
+    <div>
+      <section className="bg-white dark:bg-zinc-900 pt-10">
         <div className="lg:grid lg:min-h-[90vh] lg:grid-cols-12">
           <section className="relative flex h-32 items-end bg-zinc-900 lg:col-span-5 lg:h-full xl:col-span-6">
             <img

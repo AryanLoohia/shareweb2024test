@@ -2,7 +2,6 @@
 
 import Head from "next/head";
 import AnimatedCounter from "./AnimatedCounter";
-import { rule } from "postcss";
 import React from "react";
 
 const Numbers: React.FC = () => {
