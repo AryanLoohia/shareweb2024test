@@ -55,6 +55,7 @@ const data = [
     category: "Amazon - Smartbiz",
     title: "Launched kgpEats , check it out now !!",
     src: "/companylogosprojects/amazon.png",
+    content: <DummyContent />,
   },
   {
     category: "Bosch - SDEX",

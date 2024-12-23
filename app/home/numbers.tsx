@@ -87,7 +87,6 @@ const Numbers: React.FC = () => {
               x="0px"
               y="0px"
               viewBox="0 0 122.88 100.54"
-              style={{ enableBackground: "new 0 0 122.88 100.54" }}
               xmlSpace="preserve"
             >
               <g>
