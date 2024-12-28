@@ -38,7 +38,7 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--emerald-800),var(--green-500))] flex items-center justify-center text-white">
         <Image
-          src="/events/ERR.png"
+          src="/events/STRAT.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"

@@ -10,8 +10,8 @@ import { motion } from "framer-motion";
 import Numbers from "./numbers";
 export default function SparklesPreview() {
   return (
-    <div className="h-auto w-full bg-black flex flex-col items-center justify-center mt-60 overflow-hidden ">
-      <h1 className="mb-4 leading-normal text-center font-extrabold  tracking-tight text-gray-900 sm:text-2xl md:text-5xl lg:text-6xl dark:text-white">
+    <div className="h-auto max-w-screen w-full bg-black flex flex-col items-center justify-center pt-20 overflow-hidden">
+      <h1 className="text-center text-3xl md:text-5xl lg:text-6xl mb-4 max-w-[80vw] leading-normal font-extrabold tracking-tight text-gray-900 dark:text-white ">
         Strategic Hub for{" "}
         <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
           Analysis

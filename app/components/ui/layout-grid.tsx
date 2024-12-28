@@ -8,6 +8,7 @@ type Card = {
   content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
+  selectedThumbnail: string;
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
@@ -42,7 +43,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             layoutId={`card-${card.id}`}
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <ImageComponent card={card} />
+            <ImageComponent card={card} selected={selected} />
           </motion.div>
         </div>
       ))}
@@ -58,11 +59,18 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   );
 };
 
-const ImageComponent = ({ card }: { card: Card }) => {
+const ImageComponent = ({
+  card,
+  selected,
+}: {
+  card: Card;
+  selected: Card | null;
+}) => {
+  const isSelected = card.id === selected?.id;
   return (
     <motion.img
       layoutId={`image-${card.id}-image`}
-      src={card.thumbnail}
+      src={isSelected ? card.selectedThumbnail : card.thumbnail}
       height="500"
       width="500"
       className={cn(

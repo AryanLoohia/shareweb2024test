@@ -6,24 +6,8 @@ import Card from "./card";
 export function BackgroundBoxesDemo() {
   const presidents = [
     {
-      name: "Garvit Garg",
-      portfolio: "Projects and Partnerships",
-      pic: "/presidents/garvit.jpeg",
-      linkedin: "https://www.linkedin.com/in/garvitgarg8903/",
-      facebook: "",
-      email: "garvit.garg.shareiitkgp@gmail.com",
-    },
-    {
-      name: "Akshat Lathi",
-      portfolio: "Projects and Partnerships",
-      pic: "/presidents/akshat.jpeg",
-      linkedin: "https://www.linkedin.com/in/akshat-lathi/",
-      facebook: "",
-      email: "akshat.lathi.shareiitkgp@gmail.com",
-    },
-    {
       name: "Kunal Patil",
-      portfolio: "Internal Affairs and Administration",
+      // portfolio: "Internal Affairs and Administration",
       pic: "/presidents/kunal.jpeg",
       linkedin: "https://www.linkedin.com/in/kunal-patil-628045268/",
       facebook: "",
@@ -31,7 +15,7 @@ export function BackgroundBoxesDemo() {
     },
     {
       name: "Sumanth Javvaji",
-      portfolio: "Internal Affairs and Administration",
+      // portfolio: "Internal Affairs and Administration",
       pic: "/presidents/sumanth.jpeg",
       linkedin: "https://www.linkedin.com/in/sumanth-javvaji-ab6046258/",
       facebook: "",
@@ -39,7 +23,7 @@ export function BackgroundBoxesDemo() {
     },
     {
       name: "Gaurav Sharma",
-      portfolio: "Marketing and Outreach",
+      // portfolio: "Marketing and Outreach",
       pic: "/presidents/gaurav.jpeg",
       linkedin: "https://www.linkedin.com/in/gaurav-sharma-b07974256/",
       facebook: "",
@@ -47,7 +31,7 @@ export function BackgroundBoxesDemo() {
     },
     {
       name: "Saurabh Chavan",
-      portfolio: "Marketing and Outreach",
+      // portfolio: "Marketing and Outreach",
       pic: "/presidents/saurabh.jpeg",
       linkedin: "https://www.linkedin.com/in/saurabh-chavan-961819251/",
       facebook: "",
@@ -62,12 +46,12 @@ export function BackgroundBoxesDemo() {
       <h1 className="relative -top-12 z-20 mb-10 bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-green-500 text-5xl font-black animate-slidein opacity-0 [--slidein-delay:30ms]">
         Presidents
       </h1>
-      <div className="z-20 relative -top-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-slidein opacity-0 [--slidein-delay:100ms] ">
+      <div className="z-20 relative -top-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 animate-slidein opacity-0 [--slidein-delay:100ms] ">
         {presidents.map((president, index) => (
           <Card
             key={index}
             name={president.name}
-            portfolio={president.portfolio}
+            // portfolio={president.portfolio}
             pic={president.pic}
             linkedin={president.linkedin}
             facebook={president.facebook}

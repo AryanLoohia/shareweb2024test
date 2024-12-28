@@ -2,7 +2,7 @@ import React from "react";
 
 interface CardProps {
   name: string;
-  portfolio?: string;
+  // portfolio?: string;
   pic: string;
   linkedin?: string;
   facebook?: string;
@@ -11,7 +11,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({
   name,
-  portfolio,
+  // portfolio,
   pic,
   linkedin,
   email,
@@ -30,9 +30,9 @@ const Card: React.FC<CardProps> = ({
               {" "}
               {name}{" "}
             </h2>
-            <p className="px-5 text-xs sm:text-base dark:text-gray-500">
+            {/* <p className="px-5 text-xs sm:text-base dark:text-gray-500">
               {portfolio}
-            </p>
+            </p> */}
           </div>
           <div className="flex justify-center pt-2 space-x-4 align-center">
             <a

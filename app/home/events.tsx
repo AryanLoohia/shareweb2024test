@@ -118,23 +118,27 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2 sm:rows-span-4",
     thumbnail: "/events/B2P.JPG",
+    selectedThumbnail: "/events/B2P.JPG",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail: "/events/CSI.png",
+    selectedThumbnail: "/events/B2P.JPG",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail: "events/ISB.JPG",
+    selectedThumbnail: "/events/B2P.JPG",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail: "events/ERR.png",
+    selectedThumbnail: "/events/B2P.JPG",
   },
 ];
