@@ -28,7 +28,7 @@ const Clients = () => {
   const defaultLogo = "https://via.placeholder.com/150";
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center h-auto">
+    <div className="flex flex-col md:flex-col items-center justify-center h-auto">
       <div className="w-screen px-8 flex justify-center border border-b-0 border-r-0 border-l-0">
         <TextGenerateEffectDemo></TextGenerateEffectDemo>
       </div>

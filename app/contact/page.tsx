@@ -141,6 +141,9 @@ const page = () => {
                     </button>
                   </div>
                 </form>
+                <p className="pt-4">
+                  Reach out to us at : kunal.patil.shareiitkgp@gmail.com
+                </p>
               </motion.div>
             </div>
           </main>

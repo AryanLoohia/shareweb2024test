@@ -6,7 +6,7 @@ import React from "react";
 
 const Numbers: React.FC = () => {
   return (
-    <div className="relative  mt-4 font-inter antialiased h-auto flex flex-col w-[80vw] border-5 border-emerald-500 justify-center bg-zinc-900 overflow-hidden left-20 md:left-48">
+    <div className="relative  mt-4 font-inter antialiased h-auto flex flex-col w-[80vw] border-5 border-emerald-500 justify-center bg-zinc-900 overflow-hidden left-20 md:left-36">
       <Head>
         <title>Animated Number Counter</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
