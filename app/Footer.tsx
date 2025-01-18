@@ -32,6 +32,7 @@ const Footer = () => {
       }
     } catch (error) {
       setResponseMessage("Error submitting form.");
+      console.log(error);
     } finally {
       setIsSubmitting(false);
       setTimeout(() => setResponseMessage(""), 5000);

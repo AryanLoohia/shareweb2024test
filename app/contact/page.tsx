@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-const page = () => {
+const Page = () => {
   const [isSubmitted, setIsSubmitted] = useState(false); // Track submission status
   const [isLoading, setIsLoading] = useState(false); // Track loading state
   const formRef = useRef<HTMLFormElement | null>(null); // Ref to the form
@@ -201,4 +201,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

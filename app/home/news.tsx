@@ -4,7 +4,7 @@ import React from "react";
 import { Carousel, Card } from "../components/ui/applecardsfornews";
 
 export default function AppleCardsCarouselDemo() {
-  const cards = data.map((card, index) => (
+  const cards = data.map((card) => (
     <Card key={card.src} card={card} layout={false} />
   ));
 
@@ -21,9 +21,9 @@ export default function AppleCardsCarouselDemo() {
 const DummyContent = () => {
   return (
     <div suppressHydrationWarning>
-      {[...new Array(3).fill(1)].map((_, index) => (
+      {[...new Array(3).fill(1)].map(() => (
         <div
-          key={"dummy-content" + index}
+          key={"dummy-content"}
           className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
         >
           <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
