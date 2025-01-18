@@ -8,7 +8,10 @@ import LayoutGridDemo from "./events";
 import Clients from "./clients";
 import { motion } from "framer-motion";
 import Numbers from "./numbers";
-export default function SparklesPreview() {
+import AppleCardsCarouselDemo from "./news";
+import dynamic from "next/dynamic";
+
+export function SparklesPreview() {
   return (
     <div className="h-auto max-w-screen w-full bg-black flex flex-col items-center justify-center pt-20 overflow-hidden">
       <h1 className="text-center text-3xl md:text-5xl lg:text-6xl mb-4 max-w-[80vw] leading-normal font-extrabold tracking-tight text-gray-900 dark:text-white ">
@@ -17,7 +20,7 @@ export default function SparklesPreview() {
           Analysis
         </mark>{" "}
         and
-        <mark className="px-2 text-white mx-1 bg-emerlad-600 rounded dark:bg-green-500">
+        <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
           Research
         </mark>
         Expertise
@@ -46,8 +49,12 @@ export default function SparklesPreview() {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
 
-      <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo>
-      <div className="relative -top-64">
+      <section className="w-full px-4">
+        <div className="max-w-screen-md mx-auto">
+          <TypewriterEffectSmoothDemo />
+        </div>
+      </section>
+      <div className="relative">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,6 +86,14 @@ export default function SparklesPreview() {
           <Clients></Clients>
         </motion.div>
       </div>
+      <div className="w-full">
+        {/* Reduce the margin between Clients and Apple Cards Carousel */}
+        <div className="mt-0 pt-4">
+          <AppleCardsCarouselDemo />
+        </div>
+      </div>
     </div>
   );
 }
+
+export default dynamic(() => Promise.resolve(SparklesPreview), { ssr: false });
