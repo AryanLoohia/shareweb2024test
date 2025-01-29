@@ -1,28 +1,28 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { LayoutGrid } from "@/app/components/ui/layout-grid";
 
 export default function LayoutGridDemo() {
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
   const elementRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       if (entry.isIntersecting) {
+  //         setVisible(true);
+  //         observer.disconnect();
+  //       }
+  //     },
+  //     { threshold: 0.3 }
+  //   );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
+  //   if (elementRef.current) {
+  //     observer.observe(elementRef.current);
+  //   }
 
-    return () => observer.disconnect();
-  }, []);
+  //   return () => observer.disconnect();
+  // }, []);
 
   return (
     <div className="">

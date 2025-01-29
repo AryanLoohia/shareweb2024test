@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Boxes } from "@/app/components/ui/background-boxes";
+// import { Boxes } from "@/app/components/ui/background-boxes";
 import Card from "./card";
 
 export function BackgroundBoxesDemo() {
