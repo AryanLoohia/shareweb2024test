@@ -2,7 +2,7 @@
 import React from "react";
 import { SparklesCore } from "@/app/components/ui/sparkles";
 import Companies from "./companies";
-import { TypewriterEffectSmoothDemo } from "./typewriter";
+// import { TypewriterEffectSmoothDemo } from "./typewriter";
 import StickyScrollRevealDemo from "./about";
 import LayoutGridDemo from "./events";
 import Clients from "./clients";
@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import Numbers from "./numbers";
 import AppleCardsCarouselDemo from "./news";
 import dynamic from "next/dynamic";
+import HeroHighlightDemo from "./hero";
 
 const Page = () => {
   return (
@@ -51,7 +52,8 @@ const Page = () => {
 
       <section className="w-full px-4">
         <div className="max-w-screen-md mx-auto">
-          <TypewriterEffectSmoothDemo />
+          {/* <TypewriterEffectSmoothDemo /> */}
+          <HeroHighlightDemo />
         </div>
       </section>
       <div className="relative">
