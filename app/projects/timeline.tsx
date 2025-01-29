@@ -58,8 +58,7 @@ export default function TimelineDemo() {
             solutions aligned with the client’s goals. We conduct thorough
             internal reviews to maintain high-quality standards and consistency.
             Advisors then verify the project’s alignment with expectations,
-            ensuring it meets all client and industry standards. integrate lorem
-            ipsum.
+            ensuring it meets all client and industry standards.
           </p>
 
           <div className="grid grid-cols-2 gap-4">

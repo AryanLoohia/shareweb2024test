@@ -25,17 +25,8 @@ export default function LayoutGridDemo() {
   }, []);
 
   return (
-    <div
-      className={` ${
-        visible ? "animate-slidein opacity-100" : "opacity-0"
-      } [--slidein-delay:30ms]`}
-    >
-      <div
-        ref={elementRef}
-        className={`h-auto py-20 mx-10 w-screen ${
-          visible ? "animate-slidein opacity-100" : "opacity-0"
-        } [--slidein-delay:30ms]`}
-      >
+    <div className="">
+      <div ref={elementRef} className="h-auto py-20 mx-10 w-screen">
         <h1 className="relative w-screen text-center z-20 mb-10 bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-green-800 text-5xl font-black animate-slidein opacity-0 [--slidein-delay:30ms]">
           Our Events
         </h1>
@@ -125,20 +116,20 @@ const cards = [
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail: "/events/CSI.png",
-    selectedThumbnail: "/events/B2P.JPG",
+    selectedThumbnail: "/events/CSI.png",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail: "events/ISB.JPG",
-    selectedThumbnail: "/events/B2P.JPG",
+    selectedThumbnail: "/events/ISB.JPG",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail: "events/ERR.png",
-    selectedThumbnail: "/events/B2P.JPG",
+    selectedThumbnail: "/events/ERR.png",
   },
 ];

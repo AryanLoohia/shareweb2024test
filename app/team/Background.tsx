@@ -39,10 +39,10 @@ export function BackgroundBoxesDemo() {
     },
   ];
   return (
-    <div className="h-auto relative min-h-screen w-full overflow-hidden bg-zinc-900 flex flex-col items-center justify-center rounded-lg pt-20">
+    <div className="h-auto relative min-h-screen w-full overflow-hidden bg-green-950 flex flex-col items-center justify-center rounded-lg pt-20">
       <div className="absolute inset-0 w-full h-full bg-zinc-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
-      <Boxes />
+      {/* <Boxes /> */}
       <h1 className="relative -top-12 z-20 mb-10 bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-green-500 text-5xl font-black animate-slidein opacity-0 [--slidein-delay:30ms]">
         Presidents
       </h1>

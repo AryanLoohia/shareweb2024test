@@ -56,18 +56,21 @@ const data = [
     title: "Launched kgpEats , check it out now !!",
     src: "/companylogosprojects/amazon.png",
     content: <DummyContent />,
+    url: "https://www.amazon.com",
   },
   {
     category: "Bosch - SDEX",
     title: "Enhance your productivity.",
     src: "/companylogosprojects/bosch.png",
     content: <DummyContent />,
+    url: "https://www.amazon.com",
   },
   {
     category: "Gram Vikas Trust",
-    title: "Launching the new Apple Vision Pro.",
+    title: "Exploring the realm of CSR",
     src: "/companylogosprojects/gvt.png",
     content: <DummyContent />,
+    url: "https://www.amazon.com",
   },
 
   {
@@ -75,17 +78,20 @@ const data = [
     title: "Maps for your iPhone 15 Pro Max.",
     src: "/companylogosprojects/incubatehub.png",
     content: <DummyContent />,
+    url: "https://www.amazon.com",
   },
   {
     category: "Money Club",
-    title: "Photography just got better.",
+    title: "Financial Planning for Co-operatives",
     src: "/companylogosprojects/moneyclub.png",
     content: <DummyContent />,
+    url: "https://www.amazon.com",
   },
   {
     category: "Vivaldis",
     title: "Hiring for a Staff Software Engineer",
     src: "/companylogosprojects/vivaldis.png",
     content: <DummyContent />,
+    url: "https://www.amazon.com",
   },
 ];
