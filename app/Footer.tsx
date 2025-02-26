@@ -87,11 +87,12 @@ const Footer = () => {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
           <div className="mx-auto max-w-sm lg:max-w-none">
             <div className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg dark:text-gray-400">
-              We are a student run organization nurturing{" "}
+              Unlock opportunities with our student-run organization
+              specializing in{" "}
               <div className="text-emerald-500 text-3xl font-bold">
                 Finance, Consulting and Product Management
               </div>{" "}
-              Get onboard and avail our services !
+              Join us and access our expert-driven services!
             </div>
 
             <div className="mt-6 flex justify-center gap-4 lg:justify-start">
