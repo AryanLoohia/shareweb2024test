@@ -36,7 +36,7 @@ const Clients = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className=" max-w-md py-4 px-8 bg-zinc-900 shadow-lg  my-20 mx-4 h-fit [background:linear-gradient(45deg,#1e1e1f,theme(colors.zinc.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.zinc.900/.48)_80%,_theme(colors.zinc.800)_86%,_theme(colors.zinc.700)_90%,_theme(colors.zinc.700)_94%,_theme(colors.zinc.600/.48))_border-box] rounded-2xl border border-4 border-transparent animate-border"
+            className=" max-w-md py-4 px-8 bg-zinc-900 shadow-lg  my-11 mx-4 h-fit [background:linear-gradient(45deg,#1e1e1f,theme(colors.zinc.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.zinc.900/.48)_80%,_theme(colors.zinc.800)_86%,_theme(colors.zinc.700)_90%,_theme(colors.zinc.700)_94%,_theme(colors.zinc.600/.48))_border-box] rounded-2xl border-4 border-transparent animate-border"
           >
             <div className="flex justify-center md:justify-end -mt-16">
               <img

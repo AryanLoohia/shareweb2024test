@@ -15,7 +15,7 @@ import HeroHighlightDemo from "./hero";
 const Page = () => {
   return (
     <div className="h-auto max-w-screen w-full bg-black flex flex-col items-center justify-center pt-20 overflow-hidden">
-      <h1 className="text-center text-3xl md:text-5xl lg:text-6xl mb-4 max-w-[80vw] leading-normal font-extrabold tracking-tight text-gray-900 dark:text-white ">
+      <div className="text-center text-2xl md:text-5xl lg:text-6xl mb-4 max-w-[80vw] leading-normal font-extrabold tracking-tight text-gray-900 dark:text-white ">
         Strategic Hub for{" "}
         <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
           Analysis
@@ -25,7 +25,7 @@ const Page = () => {
           Research
         </mark>
         Expertise
-      </h1>
+      </div>
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -56,7 +56,7 @@ const Page = () => {
           <HeroHighlightDemo />
         </div>
       </section>
-      <div className="relative">
+      <div className="relative -top-10">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ const Page = () => {
       </div>
       <div className="w-full">
         {/* Reduce the margin between Clients and Apple Cards Carousel */}
-        <div className="mt-0 pt-4">
+        <div className="mt-0 pt-0">
           <AppleCardsCarouselDemo />
         </div>
       </div>

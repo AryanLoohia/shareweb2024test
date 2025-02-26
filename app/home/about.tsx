@@ -51,7 +51,7 @@ const content = [
 export default function StickyScrollRevealDemo() {
   return (
     <div
-      className="p-10 relative left-10 w-screen 
+      className="px-10 pb-5 relative -top-20 left-10 w-screen 
     "
     >
       <StickyScroll content={content} />
