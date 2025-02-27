@@ -67,7 +67,7 @@ const data = [
   },
   {
     category: "Fluxgen",
-    title: "Data Driver Decision Making",
+    title: "Data Driven Decision Making",
     src: "/companylogosprojects/fluxgen.png",
     content: <DummyContent />,
     url: "https://drive.google.com/file/d/1QcnRwcszhH-fHlPoocA6BTD6nfhSVUZj/view",
