@@ -74,7 +74,7 @@ const data = [
   },
   {
     category: "Bosch - SDEX",
-    title: "Enhance your productivity.",
+    title: "Exploring avenues in the Indian market",
     src: "/companylogosprojects/bosch.png",
     content: <DummyContent />,
     url: "https://sdex.in/",
@@ -96,7 +96,7 @@ const data = [
 
   {
     category: "Incubate Fund",
-    title: "Maps for your iPhone 15 Pro Max.",
+    title: "Deep dive into ClimateTech",
     src: "/companylogosprojects/incubatehub.png",
     content: <DummyContent />,
     url: "https://drive.google.com/file/d/1KV3nObUmDIjLRg9eLY7tQyyNqAg06KGK/view",
