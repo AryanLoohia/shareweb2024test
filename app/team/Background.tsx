@@ -10,7 +10,7 @@ export function BackgroundBoxesDemo() {
       // portfolio: "Internal Affairs and Administration",
       pic: "/presidents/kunal.jpeg",
       linkedin: "https://www.linkedin.com/in/kunal-patil-628045268/",
-      facebook: "",
+      twitter: "",
       email: "kunal.patil.shareiitkgp@gmail.com",
     },
     {
@@ -18,7 +18,7 @@ export function BackgroundBoxesDemo() {
       // portfolio: "Internal Affairs and Administration",
       pic: "/presidents/sumanth.jpeg",
       linkedin: "https://www.linkedin.com/in/sumanth-javvaji-ab6046258/",
-      facebook: "",
+      twitter: "",
       email: "sumanth.javvaji.shareiitkgp@gmail.com",
     },
     {
@@ -26,7 +26,7 @@ export function BackgroundBoxesDemo() {
       // portfolio: "Marketing and Outreach",
       pic: "/presidents/gaurav.jpeg",
       linkedin: "https://www.linkedin.com/in/gaurav-sharma-b07974256/",
-      facebook: "",
+      twitter: "",
       email: "gaurav.sharma.shareiitkgp@gmail.com",
     },
     {
@@ -34,7 +34,7 @@ export function BackgroundBoxesDemo() {
       // portfolio: "Marketing and Outreach",
       pic: "/presidents/saurabh.jpeg",
       linkedin: "https://www.linkedin.com/in/saurabh-chavan-961819251/",
-      facebook: "",
+      twitter: "",
       email: "saurabh.chavan.shareiitkgp@gmail.com",
     },
   ];
@@ -54,7 +54,7 @@ export function BackgroundBoxesDemo() {
             // portfolio={president.portfolio}
             pic={president.pic}
             linkedin={president.linkedin}
-            facebook={president.facebook}
+            twitter={president.twitter}
             email={president.email}
           />
         ))}
