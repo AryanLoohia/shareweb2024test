@@ -49,6 +49,13 @@ const DummyContent = () => {
 
 const data = [
   {
+    category: "Seventh Edition",
+    // title: "You can do more with AI.",
+    link: "https://drive.google.com/file/d/1-4i62ZnettQ5atl0wBZTh9tjRvCNoryn/view",
+    content: <DummyContent />,
+    src: "/newsletter/news7.png",
+  },
+  {
     category: "Sixth Edition",
     // title: "You can do more with AI.",
     link: "https://drive.google.com/file/d/1eR33Dyvjepzmrw_HR1c3eOrXpMEpY1yQ/view",
