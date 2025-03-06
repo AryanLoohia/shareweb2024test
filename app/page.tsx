@@ -12,7 +12,7 @@ const Page: React.FC = () => {
       {/* SEO Configuration */}
       <NextSeo
         title="SHARE - IIT Kharagpur"
-        description="Share IIT Kharagpur provides expert finance and consulting services tailored for students. Get financial planning, investment advice, and consulting services from industry professionals at IIT Kharagpur."
+        description="SHARE IIT Kharagpur provides expert finance and consulting services tailored for students. Get financial planning, investment advice, and consulting services from industry professionals at IIT Kharagpur."
         canonical="https://www.share-iitkgp.com"
         additionalMetaTags={[
           {
