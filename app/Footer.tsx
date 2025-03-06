@@ -98,7 +98,7 @@ const Footer = () => {
             <div className="mt-6 flex justify-center gap-4 lg:justify-start">
               <a
                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                href="#"
+                href="https://www.facebook.com/share.iitkgp/events/?ref=page_internal&_rdr"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -120,7 +120,7 @@ const Footer = () => {
 
               <a
                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                href="#"
+                href="https://www.instagram.com/share_iitkgp/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -143,7 +143,7 @@ const Footer = () => {
               {/* Threads Icon */}
               <a
                 className="text-gray-700 dark:text-white"
-                href="#"
+                href="https://www.threads.net/@share_iitkgp"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -162,7 +162,7 @@ const Footer = () => {
               {/* X (Twitter) Icon */}
               <a
                 className="text-gray-700 dark:text-white"
-                href="#"
+                href="https://x.com/IitShare74714"
                 target="_blank"
                 rel="noreferrer"
               >
