@@ -190,7 +190,7 @@ const Page = () => {
                   </div>
                 </form>
                 <p className="pt-4">
-                  Reach out to us at : kunal.patil.shareiitkgp@gmail.com
+                  Reach out to us at : kunal.patil@share-iitkgp.com
                 </p>
               </motion.div>
             </div>
