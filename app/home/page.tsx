@@ -15,11 +15,13 @@ import HeroHighlightDemo from "./hero";
 const Page = () => {
   return (
     <div className="h-auto max-w-screen w-full bg-black flex flex-col items-center justify-center pt-20 overflow-hidden">
-      <div className="text-center text-2xl md:text-5xl lg:text-6xl mb-4 max-w-[80vw] leading-normal font-extrabold tracking-tight text-gray-900 dark:text-white ">
-        Strategic Hub for{" "}
-        <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
-          Analysis
-        </mark>{" "}
+      <div className="text-center text-2xl md:text-5xl lg:text-6xl mb-4 max-w-[80vw] leading-[2rem] font-extrabold tracking-tight text-gray-900 dark:text-white ">
+        <div className="pb-3">
+          Strategic Hub for{" "}
+          <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
+            Analysis
+          </mark>
+        </div>{" "}
         and
         <mark className="px-2 text-white mx-1 bg-emerald-600 rounded dark:bg-green-500">
           Research
